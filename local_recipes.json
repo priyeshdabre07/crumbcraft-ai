@@ -1,0 +1,23 @@
+[
+  {
+    "id": "rec_1",
+    "title": "Swiss Meringue Buttercream Base",
+    "category": "frosting",
+    "allergensCleared": [
+      "gluten",
+      "nuts"
+    ],
+    "notes": "Ratio: 1 part egg whites, 2 parts sugar, 3 parts butter by weight."
+  },
+  {
+    "id": "rec_2",
+    "title": "Vegan Buttercream Alternative",
+    "category": "allergen_substitute",
+    "allergensCleared": [
+      "dairy",
+      "gluten",
+      "nuts"
+    ],
+    "notes": "Swap butter for 1:1 high-fat vegetable shortening with 1 tsp vanilla extract."
+  }
+]
