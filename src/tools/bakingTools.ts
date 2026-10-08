@@ -15,17 +15,6 @@ export const allergenCheckerTool = createTool({
         recommendedSubstitute: z.string().optional(),
     }),
     execute: async ({ ingredient, allergies }) => {
-        // Artificial loading state & animation for the console
-        const frames = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏'];
-        let i = 0;
-        const interval = setInterval(() => {
-            process.stdout.write(`\r${frames[i++ % frames.length]} Checking allergens for ${ingredient}...`);
-        }, 100);
-        
-        await new Promise(resolve => setTimeout(resolve, 2000));
-        clearInterval(interval);
-        process.stdout.write(`\r✓ Completed allergen check for ${ingredient}   \n`);
-
         const lowerIng = ingredient.toLowerCase();
 
         let safe = true;
